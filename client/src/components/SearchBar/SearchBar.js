@@ -15,7 +15,9 @@ const SearchBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(requestAllArticles());
-    fetch(`/search?article=${articleInput}`)
+    fetch(
+      `https://backend-newspaper.herokuapp.com/search?article=${articleInput}`
+    )
       .then((res) => res.json())
       .then((data) => {
         const { articles } = data.data;

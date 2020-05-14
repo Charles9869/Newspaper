@@ -20,7 +20,7 @@ const App = () => {
   // Fetch top headlines articles
   React.useEffect(() => {
     dispatch(requestAllArticles());
-    fetch('http://localhost:4000/top-headlines')
+    fetch('https://backend-newspaper.herokuapp.com/top-headlines')
       .then((res) => res.json())
       .then((data) => {
         const { articles } = data.data;

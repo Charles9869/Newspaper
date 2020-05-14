@@ -5,7 +5,9 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Title>NEWSPAPER</Title>
+      <NavLink to='/'>
+        <Title>NEWSPAPER</Title>
+      </NavLink>
       <SubTitle>
         <a href='https://newsapi.org/'>Powered by News API</a>{' '}
       </SubTitle>
