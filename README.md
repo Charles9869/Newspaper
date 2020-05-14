@@ -9,8 +9,8 @@ Application where you can search news articles. Built using the MERN stack
 
 ## TECH STACK
 
-- React
-- NodeJS and express
+- React, Redux, Styled Components
+- NodeJS, Express
 - News API
 
 ## RUN LOCALLY
